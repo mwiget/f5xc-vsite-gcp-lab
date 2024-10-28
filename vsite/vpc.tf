@@ -43,7 +43,7 @@ resource "google_compute_firewall" "allow-sli" {
     protocol = "udp"
     ports    = ["0-65535"]
   }
-  source_ranges = var.gcp_sli_subnets
+  source_ranges = ["0.0.0.0/0"]
 }
 
 resource "google_compute_firewall" "allow-slo" {
