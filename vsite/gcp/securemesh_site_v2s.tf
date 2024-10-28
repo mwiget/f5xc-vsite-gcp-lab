@@ -11,7 +11,7 @@ resource "restapi_object" "site" {
       }
     },
     "spec": {
-      "azure": {
+      "gcp": {
         "not_managed": {}
       },
       "no_network_policy": {},
